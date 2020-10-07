@@ -1,28 +1,20 @@
-<template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        blogNuxt
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+<template >
+  <div class = " container ">
+    <h1 h1  class = " title ">
+      Contato
+    </h1>
+    <div class = " content ">
+      <form  name = " contato "  action = " "  method = " post ">
+        <label label  class = " form-label "  for = " nome ">
+          Titulo:
+        </label >
+        <input  class = " form-field "  name = " name "  id = " name " />
+        <label label  class = " form-label "  for = " mensagem ">
+          Mensagem:
+        </label>
+        <textarea  class = " form-field "  name = " message "  id = " message " > </textarea >
+        <input  class = " form-button "  type = " submit "  value = " Send message "/>
+      </form>
     </div>
   </div>
 </template>
