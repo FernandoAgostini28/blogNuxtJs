@@ -1,9 +1,10 @@
 <template >
   <div class = " container ">
-    <h1 h1  class = " title ">
-      Contato
-    </h1>
+    
     <div class = " content ">
+      <h1 h1  class = " title ">
+        Novo Artigo
+      </h1>
       <form  name = " contato "  action = " "  method = " post ">
         <label label  class = " form-label "  for = " nome ">
           Titulo:
@@ -24,8 +25,11 @@ export default {}
 </script>
 
 <style scoped>
+ @import './assets/style.scss';
+ 
 .container {
-
+ display: flex;
+ flex-flow: row wrap;
 }
 
 .content {
@@ -34,6 +38,8 @@ export default {}
   padding: 8px ;
   border: 1px solid #ccc;
   box-shadow:0 2px 2px #aaa;
+  margin: 10px;
 }
+
 
 </style>
