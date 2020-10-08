@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    
     <div class="content">
       <h1 h1 class="titleForm">
         Novo Artigo
@@ -16,30 +15,26 @@
         <textarea class="textForm" v-model="newArtigo" type="text" placeholder="Nova Mensagem" name=" newArtigo" id="newArtigo" value=""> </textarea>
         <input class="buttonGreen" type="submit" value="Send message"/>
       </form>
-      
     </div>
     <div>
       <ul> 
-      <!-- percorrendo o array com os artigos-->
-        <li class="contentCard" v-for=" (art , index) in artigos" :key="index"> 
-          <div class="row">
-            <div >
-              <div class="card-header"><h2 class="tituloArt" @click="exibirArtigo(index)">{{art.titulo}}</h2>
-              </div> 
-              <!-- Exibe o texto do artigo selecionado-->
-            <div class="card-body" v-if="artigoAberto === index" id="artigo">{{art.artigo}}</div>
-              <!-- botao para remover artigo -->
-              <button class="btn" @click="removeArt(art)" type="button">remove</button>
-            </div>
-          </div>   
-        </li>
-      </ul>
-    </div>
+ <!-- percorrendo o array com os artigos-->
+   <li v-for=" (art , index) in artigos" :key="index"> 
+     <div class="row">
+      <div class="card">
+        <div class="card-header"><h2 class="tituloArt" @click="exibirArtigo(index)">{{art.titulo}}</h2>
+        </div> 
+        <!-- Exibe o texto do artigo selecionado-->
+        <div class="card-body" v-if="artigoAberto === index" id="artigo">{{art.artigo}}</div>
+        <!-- botao para remover artigo -->
+          <button class="btn" @click="removeArt(art)" type="button">remove</button>
+        </div>
+      </div>   
+   </li>
+</ul>
+    </div> 
   </div>
   
-
- 
-
 </template>
 
 <script>
