@@ -1,3 +1,4 @@
+@import "../autoloads/fontes";
 .btn {
 
     
@@ -27,7 +28,8 @@
     margin-top: 5px;
     border-bottom: 0px solid #eee;
     background: #82CA9D;
-    font-size: 14px;
+    font-size: $sizeFontHeard;
+    font-family: $fontFamilyBody;
 
     &:focus{ outline: 0 }
 
