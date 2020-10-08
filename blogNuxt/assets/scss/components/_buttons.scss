@@ -1,8 +1,3 @@
-/*importando compontes scss*/
-@import "./colors";
-@import "./fontes";
-
-
 .btn {
 
     
@@ -22,17 +17,17 @@
 
 /* Botão verde*/
 .buttonGreen {
-    width: 92%;
+    width: 100%;
     border-radius: 10px;
     border: none;
     padding: 10px;
-    color: $corTextoLogo;
+    color: white;
     border-radius: 7px;
     transition: all 0.2s;
-    margin: 5px;
+    margin-top: 5px;
     border-bottom: 0px solid #eee;
     background: #82CA9D;
-    font-size: $sizeFontBody;
+    font-size: 14px;
 
     &:focus{ outline: 0 }
 

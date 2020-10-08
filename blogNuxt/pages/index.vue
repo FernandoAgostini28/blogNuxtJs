@@ -9,12 +9,12 @@
         <label label  class = " form-label "  for = " nome ">
           Titulo:
         </label >
-        <input  class = " form-field "  name = " name "  id = " name " />
+        <input  class = " textForm "  name = " name "  id = " name " />
         <label label  class = " form-label "  for = " mensagem ">
           Mensagem:
         </label>
-        <textarea  class = " form-field "  name = " message "  id = " message " > </textarea >
-        <input  class = " form-button "  type = " submit "  value = " Send message "/>
+        <textarea  class = " textForm "  name = " message "  id = " message " > </textarea >
+        <input  class = " buttonGreen "  type = " submit "  value = " Send message "/>
       </form>
     </div>
   </div>
@@ -24,22 +24,8 @@
 export default {}
 </script>
 
-<style scoped>
- @import './assets/style.scss';
+<style>
  
-.container {
- display: flex;
- flex-flow: row wrap;
-}
-
-.content {
-  box-sizing: border-box;
-  width: 280px;
-  padding: 8px ;
-  border: 1px solid #ccc;
-  box-shadow:0 2px 2px #aaa;
-  margin: 10px;
-}
-
+  
 
 </style>

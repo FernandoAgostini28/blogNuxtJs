@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 280px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 2px 2px #aaa;
+          box-shadow: 0 2px 2px #aaa;
+  margin: 10px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: green;
+  text-align: center;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  color: red;
+}
+
+/* Botão verde*/
+.buttonGreen {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 5px;
+  border-bottom: 0px solid #eee;
+  background: #82CA9D;
+  font-size: 14px;
+}
+
+.buttonGreen:focus {
+  outline: 0;
+}
+
+.buttonGreen:active {
+  -webkit-transform: scaleX(0.9) translateY(4px);
+          transform: scaleX(0.9) translateY(4px);
+}
+
+.buttonGreen:not(:active) {
+  border-bottom: 4px solid #62AA7D;
+}
+
+.textForm {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  resize: vertical;
+  margin-top: 5px;
+}
+
+/* removendo borda ao receber o foco*/
+textarea:focus, input:focus, select:focus {
+  outline: 0;
+}
+/*# sourceMappingURL=main.css.map */
