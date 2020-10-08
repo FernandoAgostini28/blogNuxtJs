@@ -1,4 +1,10 @@
-li {
+ul {
+     /* apenas para evitar o height 0 causado pelo float */
+  }
+
+  li {
+    
     list-style-type: none;
-    width: 100%;
-}
+    display: flex;
+    
+  }

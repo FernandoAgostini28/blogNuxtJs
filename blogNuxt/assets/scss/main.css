@@ -143,6 +143,7 @@ textarea:focus, input:focus, select:focus {
   cursor: pointer;
 }
 
+/*importando compontes scss*/
 /* Variaveis referentes as colores*/
 /* importando as fontes do google*/
 /* importando as fontes do google*/
@@ -161,18 +162,25 @@ textarea:focus, input:focus, select:focus {
 
 /* Variaveis referente ao tamanho da tela media Query*/
 /* css classe card*/
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contentCard {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: auto;
+  width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   -webkit-box-shadow: 0 2px 2px #aaa;
           box-shadow: 0 2px 2px #aaa;
   margin: 10px;
+}
+
+.card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   /* Ao passsar o mouse o card aumenta e recebe sombra*/
 }
 
@@ -207,6 +215,9 @@ textarea:focus, input:focus, select:focus {
     padding: 10px;
     font-size: 14px;
   }
+  .card {
+    width: 100%;
+  }
 }
 
 /* Quando a tela está  entre (768px) e (992px) o header card muda a cor para Cinza*/
@@ -218,9 +229,15 @@ textarea:focus, input:focus, select:focus {
     padding: 10px;
     font-size: 14px;
   }
+  .container {
+    width: 100%;
+  }
   .heading {
     padding: 10px;
     font-size: 14px;
+  }
+  .card {
+    width: 100%;
   }
 }
 
@@ -233,9 +250,15 @@ textarea:focus, input:focus, select:focus {
     padding: 10px;
     font-size: 12px;
   }
+  .container {
+    width: 100%;
+  }
   .heading {
     padding: 10px;
     font-size: 14px;
+  }
+  .card {
+    width: 100%;
   }
 }
 
@@ -248,24 +271,26 @@ textarea:focus, input:focus, select:focus {
     padding: 5px;
     font-size: 12px;
   }
+  .container {
+    width: 100%;
+  }
   .heading {
     padding: 5px;
     font-size: 12px;
   }
+  .card {
+    width: 100%;
+  }
+}
+
+ul {
+  /* apenas para evitar o height 0 causado pelo float */
 }
 
 li {
   list-style-type: none;
-  width: 100%;
-}
-
-body {
-  width: auto;
-  background-color: silver;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  -webkit-text-decoration-color: Black;
-          text-decoration-color: Black;
-  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
