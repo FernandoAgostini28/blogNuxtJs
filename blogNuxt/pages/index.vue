@@ -2,15 +2,15 @@
   <div class="container">
     
     <div class="content">
-      <h1 h1 class="title">
+      <h1 h1 class="titleForm">
         Novo Artigo
       </h1>
       <form name="contato" action=" " method="post">
-        <label label class= "label-form" for="nome">
+        <label label class= "labelForm" for="nome">
           Titulo:
         </label>
         <input class="textForm" name="name" id="name"/>
-        <label label class="label-form" for="mensagem">
+        <label label class="labelForm" for="mensagem">
           Mensagem:
         </label>
         <textarea class="textForm" name="message"  id="message"> </textarea>

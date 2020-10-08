@@ -1,10 +1,25 @@
 @charset "UTF-8";
+/* importando as fontes do google*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* importando as fontes do google*/
+/* Variaveis referentes ao texto*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.tituloArt {
+  width: auto;
+  padding: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.tituloArt:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +39,17 @@
   -webkit-box-shadow: 0 2px 2px #aaa;
           box-shadow: 0 2px 2px #aaa;
   margin: 10px;
+}
+
+.titleForm {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.labelForm {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 /* importando as fontes do google*/
@@ -113,26 +139,5 @@ textarea:focus, input:focus, select:focus {
 .tituloArt:hover {
   color: yellow;
   cursor: pointer;
-}
-
-/* importando as fontes do google*/
-/* importando as fontes do google*/
-/* Variaveis referentes ao texto*/
-.tituloArt {
-  width: auto;
-  padding: 15px;
-  position: relative;
-  display: inline-block;
-}
-
-.tituloArt:hover {
-  color: yellow;
-  cursor: pointer;
-}
-
-.label-form {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-  padding-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */

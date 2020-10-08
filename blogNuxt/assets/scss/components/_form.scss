@@ -1,3 +1,5 @@
+@import "../autoloads/fontes";
+
 .container {
     display: flex;
     flex-flow: row wrap;
@@ -11,3 +13,16 @@
      box-shadow:0 2px 2px #aaa;
      margin: 10px;
    }
+
+   .titleForm {
+     font-family: $fontFamilyForm;
+     text-align: center;
+     font-size:$sizeFontLogo;
+
+   }
+
+   .labelForm {
+    font-family:$fontFamilyBody; 
+    font-size: $sizeFontBody;
+      
+}
