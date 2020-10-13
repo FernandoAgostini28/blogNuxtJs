@@ -1,0 +1,41 @@
+@import "../autoloads/fontes";
+@import "../components/colors";
+
+.container{
+    margin: 0 auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: hidden;
+
+    .header {
+        width: 100%;
+        background-color: $corFundoContainer;
+        color: $cortextoPrincipal;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+  .content {
+      width: 100%;
+      padding: 10px;
+      background: $corContent;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      
+    }
+
+  .footer {
+    width: 100%;
+    background-color: $corFundoContainer;
+    color:$cortextoPrincipal;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+}
