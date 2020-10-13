@@ -1,18 +1,8 @@
 @import "../autoloads/fontes";
 
-.container {
-    display: flex;
-    flex-flow: row wrap;
-   }
-   
-   .content {
-     box-sizing: border-box;
-     width: 100%;
-     padding: 8px ;
-     border: 1px solid #ccc;
-     box-shadow:0 2px 2px #aaa;
-     margin: 10px;
-   }
+.form{
+
+  padding: 20px;
 
    .titleForm {
      font-family: $fontFamilyForm;
@@ -22,7 +12,6 @@
    }
 
    .labelForm {
-    font-family:$fontFamilyBody; 
-    font-size: $sizeFontBody;
-      
+     font-size: $sizeFontHeard;
+   }
 }

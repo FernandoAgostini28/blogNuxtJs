@@ -1,17 +1,22 @@
+// importando as fontes para criar os botoes
+
 @import "../autoloads/fontes";
+@import "./colors";
+
 .btn {
 
-    
+    padding: 10px;
     background: none;
     border: none;
-    color: green;
+    color: $corBtnRemover;
     text-align: center;
+    margin-top: 10px;
     
     &:focus{ outline: 0 }
     
 
     &:hover {
-        color: red;
+        color: $corFundoContainer;
     }
     
 }
@@ -19,15 +24,15 @@
 /* Botão verde*/
 .buttonGreen {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     padding: 10px;
-    color: white;
+    color:$cortextoPrincipal;
     border-radius: 7px;
     transition: all 0.2s;
-    margin-top: 5px;
+    margin-top: 10px;
     border-bottom: 0px solid #eee;
-    background: #82CA9D;
+    background:$corBtnVerde;
     font-size: $sizeFontHeard;
     font-family: $fontFamilyBody;
 
