@@ -18,7 +18,23 @@ ul {
         transform: scale(1.01);
         box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
       }
-  } 
+  }
+  .tituloArt {
+
+    width: auto;
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+
+        &:hover{
+        
+        
+        
+        color: $corFundoContainer;
+        cursor: pointer;
+        }
+
+    } 
   
 
 
@@ -49,6 +65,7 @@ ul {
       color: $cortextoPrincipal;
   }
   }
+ 
 
 }
 
