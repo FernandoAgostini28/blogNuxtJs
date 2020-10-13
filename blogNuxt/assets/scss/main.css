@@ -22,58 +22,14 @@
   cursor: pointer;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-.content {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0 2px 2px #aaa;
-          box-shadow: 0 2px 2px #aaa;
-  margin: 10px;
-}
-
-.titleForm {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 30px;
-}
-
-.labelForm {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-}
-
-/* importando as fontes do google*/
-/* importando as fontes do google*/
-/* Variaveis referentes ao texto*/
-.tituloArt {
-  width: auto;
-  padding: 15px;
-  position: relative;
-  display: inline-block;
-}
-
-.tituloArt:hover {
-  color: yellow;
-  cursor: pointer;
-}
-
+/* Variaveis referentes as colores*/
 .btn {
+  padding: 10px;
   background: none;
   border: none;
-  color: green;
+  color: red;
   text-align: center;
+  margin-top: 10px;
 }
 
 .btn:focus {
@@ -81,20 +37,20 @@
 }
 
 .btn:hover {
-  color: red;
+  color: purple;
 }
 
 /* Botão verde*/
 .buttonGreen {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   padding: 10px;
   color: white;
   border-radius: 7px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin-top: 5px;
+  margin-top: 10px;
   border-bottom: 0px solid #eee;
   background: #82CA9D;
   font-size: 20px;
@@ -116,11 +72,14 @@
 
 .textForm {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 0px;
+  border-radius: 5px;
   resize: vertical;
   margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* removendo borda ao receber o foco*/
@@ -143,8 +102,74 @@ textarea:focus, input:focus, select:focus {
   cursor: pointer;
 }
 
-/*importando compontes scss*/
+/* Variaveis referente ao tamanho da tela media Query*/
 /* Variaveis referentes as colores*/
+ul {
+  list-style-type: none;
+  padding: 0;
+  /* Quando a tela está  entre (992px) e (1200px) o card e o botão remover   mudam de cor*/
+  /* Quando a tela está  entre (768px) e (992px) o card e o botão remover   mudam de cor*/
+  /* Quando a tela está  entre (576px) e (768px) o card e o botão remover   mudam de cor*/
+  /* Quando a tela está  entre (576px)  o card e o botão remover   mudam de cor*/
+}
+
+ul .liCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+  -webkit-box-shadow: 15px 21px 40px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 15px 21px 40px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ul .liCard:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  ul .liCard {
+    background: hotpink;
+  }
+  ul .btn:hover {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  ul .liCard {
+    background: gray;
+  }
+  ul .btn:hover {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  ul .liCard {
+    background: blue;
+  }
+  ul .btn:hover {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ul .liCard {
+    background: red;
+  }
+  ul .btn {
+    color: Black;
+  }
+  ul .btn:hover {
+    color: white;
+  }
+}
+
 /* importando as fontes do google*/
 /* importando as fontes do google*/
 /* Variaveis referentes ao texto*/
@@ -160,137 +185,81 @@ textarea:focus, input:focus, select:focus {
   cursor: pointer;
 }
 
+/* Variaveis referentes as colores*/
+.form {
+  padding: 20px;
+}
+
+.form .titleForm {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.form .labelForm {
+  font-size: 20px;
+}
+
+/* importando as fontes do google*/
+/* importando as fontes do google*/
+/* Variaveis referentes ao texto*/
+.tituloArt {
+  width: auto;
+  padding: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.tituloArt:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+/* Variaveis referentes as colores*/
+.container {
+  margin: 0 auto;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.container .header {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container .content {
+  width: 100%;
+  padding: 10px;
+  background: lightgrey;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container .footer {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /* Variaveis referente ao tamanho da tela media Query*/
-/* css classe card*/
-.contentCard {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0 2px 2px #aaa;
-          box-shadow: 0 2px 2px #aaa;
-  margin: 10px;
-}
-
-.card {
-  width: 100%;
-  background: #fff;
-  border: 1px solid #ccc;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  /* Ao passsar o mouse o card aumenta e recebe sombra*/
-}
-
-.card:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-}
-
-/* cabeçalho do card*/
-.card-header {
-  text-align: center;
-  padding: 10px 10px;
-  background: darkcyan;
-  color: #fff;
-}
-
-/* corpo do card*/
-.card-body {
-  padding: 10px 10px;
-  text-align: center;
-  font-size: 18px;
-}
-
-/* Quando a tela está  entre (992px) e (1200px) o header card muda a cor para Rosa*/
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .card-header {
-    background: hotpink;
-  }
-  .heading {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-/* Quando a tela está  entre (768px) e (992px) o header card muda a cor para Cinza*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .card-header {
-    background: gray;
-  }
-  .card-body {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .container {
-    width: 100%;
-  }
-  .heading {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-/* Quando a tela está  entre (576px) e (768px) o header card muda a cor para Azul*/
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .card-header {
-    background: blue;
-  }
-  .card-body {
-    padding: 10px;
-    font-size: 12px;
-  }
-  .container {
-    width: 100%;
-  }
-  .heading {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-/* Quando a tela está  entre (576px)  o header card  muda a cor para vermelho*/
-@media screen and (max-width: 576px) {
-  .card-header {
-    background: red;
-  }
-  .card-body {
-    padding: 5px;
-    font-size: 12px;
-  }
-  .container {
-    width: 100%;
-  }
-  .heading {
-    padding: 5px;
-    font-size: 12px;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-ul {
-  /* apenas para evitar o height 0 causado pelo float */
-}
-
-li {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 /*# sourceMappingURL=main.css.map */

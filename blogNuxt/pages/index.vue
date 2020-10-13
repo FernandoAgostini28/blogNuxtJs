@@ -1,5 +1,4 @@
 <template>
-
  <!-- classe principal-->
   <div class="container">
     <!-- cabeçalho -->
@@ -31,8 +30,8 @@
         <!-- percorrendo o array com os artigos-->
           <li  class="liCard" v-for=" (art , index) in artigos" :key="index"> 
             <div class="card">
-              <span class="card-header"><h2 class="tituloArt" @click="exibirArtigo(index)">{{art.titulo}}</h2>
-              </span> 
+              <div class="card-header"><h2 class="tituloArt" @click="exibirArtigo(index)">{{art.titulo}}</h2>
+              </div> 
               <!-- Exibe o texto do artigo selecionado-->
               <div  v-if="artigoAberto === index" id="artigo">{{art.artigo}}</div>
               <!-- botao para remover artigo -->
